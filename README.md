@@ -4,7 +4,7 @@
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-一个面向AI应用开发工程师求职展示的NLP工程项目：从客服消息中识别多个业务意图，并结合模型置信度与风险规则，输出处理部门、优先级、SLA和人工复核建议。
+一个面向电商客服场景的NLP工程项目：从客服消息中识别多个业务意图，并结合模型置信度与风险规则，输出处理部门、优先级、SLA和人工复核建议。
 
 > 数据为可复现模板合成，不包含真实客户数据。所有指标只代表当前合成测试集，不能等同生产效果。
 
@@ -17,7 +17,7 @@
 - 自动输出部门、优先级、SLA、转人工标志与解释原因；
 - BERT优先加载，产物缺失时自动回退TF-IDF；
 - FastAPI单条/批量接口、Swagger和浏览器演示页；
-- 自动化测试、Docker、评估报告、架构图和面试材料齐全。
+- 自动化测试、Docker、评估报告和架构文档齐全。
 
 ## 业务标签
 
@@ -157,7 +157,7 @@ Invoke-RestMethod -Method Post -Uri "http://127.0.0.1:8000/api/v1/predict/batch"
 ├── data/                   # 原始示例与生成后的数据
 ├── artifacts/              # 基线和BERT模型产物
 ├── reports/                # JSON/Markdown指标与混淆矩阵
-├── docs/                   # 架构、数据声明、简历与面试材料
+├── docs/                   # 架构与数据声明
 ├── Dockerfile
 └── docker-compose.yml
 ```
@@ -176,10 +176,6 @@ Invoke-RestMethod -Method Post -Uri "http://127.0.0.1:8000/api/v1/predict/batch"
 - 当前没有真实客服对话上下文；
 - 路由规则由项目假设制定，尚未经过企业业务人员验收；
 - 正式上线前需要真实脱敏数据、标注规范、漂移监控和灰度验证。
-
-## 求职材料
-
-简历要点、三分钟介绍和面试追问见[简历与面试材料](docs/resume_and_interview.md)。
 
 ## 预训练模型来源
 

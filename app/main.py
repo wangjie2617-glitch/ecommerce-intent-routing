@@ -33,7 +33,7 @@ async def lifespan(_: FastAPI):
 app = FastAPI(
     title="电商客户诉求识别与智能工单路由",
     version="1.0.0",
-    description="多标签文本分类、风险识别与可解释工单路由求职实践项目。",
+    description="多标签文本分类、风险识别与可解释工单路由工程项目。",
     lifespan=lifespan,
 )
 
@@ -73,4 +73,3 @@ def predict_batch(request: BatchPredictRequest) -> dict[str, object]:
         "count": len(items),
         "total_latency_ms": round((time.perf_counter() - started) * 1000, 2),
     }
-
