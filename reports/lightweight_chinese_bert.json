@@ -1,0 +1,177 @@
+{
+  "model": "Lightweight Chinese BERT",
+  "metrics": {
+    "micro_f1": 0.6588,
+    "macro_f1": 0.6685,
+    "samples_f1": 0.6544,
+    "micro_precision": 0.5435,
+    "micro_recall": 0.836,
+    "exact_match": 0.2733,
+    "hamming_loss": 0.1389,
+    "per_label": {
+      "商品咨询": {
+        "precision": 0.6619718309859155,
+        "recall": 0.9591836734693877,
+        "f1-score": 0.7833333333333333,
+        "support": 49.0
+      },
+      "退款退货": {
+        "precision": 0.8888888888888888,
+        "recall": 0.6779661016949152,
+        "f1-score": 0.7692307692307693,
+        "support": 59.0
+      },
+      "物流异常": {
+        "precision": 0.31521739130434784,
+        "recall": 0.7073170731707317,
+        "f1-score": 0.43609022556390975,
+        "support": 41.0
+      },
+      "商品质量": {
+        "precision": 0.5052631578947369,
+        "recall": 1.0,
+        "f1-score": 0.6713286713286714,
+        "support": 48.0
+      },
+      "支付问题": {
+        "precision": 0.6129032258064516,
+        "recall": 0.6785714285714286,
+        "f1-score": 0.6440677966101694,
+        "support": 56.0
+      },
+      "优惠活动": {
+        "precision": 0.5774647887323944,
+        "recall": 0.8541666666666666,
+        "f1-score": 0.6890756302521008,
+        "support": 48.0
+      },
+      "账号问题": {
+        "precision": 0.30864197530864196,
+        "recall": 0.9615384615384616,
+        "f1-score": 0.4672897196261682,
+        "support": 26.0
+      },
+      "投诉升级": {
+        "precision": 0.5412844036697247,
+        "recall": 0.8805970149253731,
+        "f1-score": 0.6704545454545454,
+        "support": 67.0
+      },
+      "其他问题": {
+        "precision": 0.875,
+        "recall": 0.8974358974358975,
+        "f1-score": 0.8860759493670886,
+        "support": 39.0
+      },
+      "micro avg": {
+        "precision": 0.5435435435435435,
+        "recall": 0.836027713625866,
+        "f1-score": 0.6587807097361238,
+        "support": 433.0
+      },
+      "macro avg": {
+        "precision": 0.5874039625101225,
+        "recall": 0.846308479719207,
+        "f1-score": 0.6685496267518619,
+        "support": 433.0
+      },
+      "weighted avg": {
+        "precision": 0.6062684658046013,
+        "recall": 0.836027713625866,
+        "f1-score": 0.6804660515777528,
+        "support": 433.0
+      },
+      "samples avg": {
+        "precision": 0.5833333333333334,
+        "recall": 0.8233333333333334,
+        "f1-score": 0.6544126984126984,
+        "support": 433.0
+      }
+    }
+  },
+  "thresholds": {
+    "商品咨询": 0.45,
+    "退款退货": 0.55,
+    "物流异常": 0.4,
+    "商品质量": 0.45,
+    "支付问题": 0.35,
+    "优惠活动": 0.4,
+    "账号问题": 0.3,
+    "投诉升级": 0.5,
+    "其他问题": 0.55
+  },
+  "extra": {
+    "base_model": "uer/chinese_roberta_L-2_H-128",
+    "device": "cpu",
+    "gpu": null,
+    "epochs": 10,
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "training_records": 1800,
+    "training_seconds": 73.729,
+    "inference_ms_per_item": 0.677,
+    "best_validation_macro_f1": 0.641,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.81158,
+        "validation_macro_f1": 0.266,
+        "validation_micro_f1": 0.2676
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.73504,
+        "validation_macro_f1": 0.406,
+        "validation_micro_f1": 0.4182
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.65614,
+        "validation_macro_f1": 0.5151,
+        "validation_micro_f1": 0.4921
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.57746,
+        "validation_macro_f1": 0.5345,
+        "validation_micro_f1": 0.5084
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.52336,
+        "validation_macro_f1": 0.531,
+        "validation_micro_f1": 0.5124
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.48461,
+        "validation_macro_f1": 0.5964,
+        "validation_micro_f1": 0.5747
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.45675,
+        "validation_macro_f1": 0.6032,
+        "validation_micro_f1": 0.5938
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.43832,
+        "validation_macro_f1": 0.6142,
+        "validation_micro_f1": 0.603
+      },
+      {
+        "epoch": 9,
+        "train_loss": 0.42503,
+        "validation_macro_f1": 0.641,
+        "validation_micro_f1": 0.6268
+      },
+      {
+        "epoch": 10,
+        "train_loss": 0.41917,
+        "validation_macro_f1": 0.6242,
+        "validation_micro_f1": 0.615
+      }
+    ]
+  }
+}

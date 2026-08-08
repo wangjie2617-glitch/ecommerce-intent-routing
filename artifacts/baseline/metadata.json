@@ -1,0 +1,17 @@
+{
+  "model": "TF-IDF + OneVsRest LogisticRegression",
+  "labels": [
+    "商品咨询",
+    "退款退货",
+    "物流异常",
+    "商品质量",
+    "支付问题",
+    "优惠活动",
+    "账号问题",
+    "投诉升级",
+    "其他问题"
+  ],
+  "training_records": 1800,
+  "training_seconds": 0.302,
+  "inference_ms_per_item": 0.061
+}

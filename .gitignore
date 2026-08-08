@@ -1,0 +1,25 @@
+.venv/
+venv/
+.idea/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.env
+.env.*
+!.env.example
+artifacts/baseline/*.joblib
+artifacts/bert/config.json
+artifacts/bert/model.safetensors
+artifacts/bert/pytorch_model.bin
+artifacts/bert/tokenizer.json
+artifacts/bert/tokenizer_config.json
+artifacts/bert/special_tokens_map.json
+artifacts/bert/vocab.txt
+artifacts/bert/training_args.bin
+data/processed/*.jsonl
+reports/figures/*.png
+
+# Local tooling and OS files
+.DS_Store
+Thumbs.db

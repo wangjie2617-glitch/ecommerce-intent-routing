@@ -1,0 +1,11 @@
+services:
+  intent-routing-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      MODEL_TYPE: auto
+      MANUAL_REVIEW_THRESHOLD: "0.55"
+    volumes:
+      - ./artifacts:/app/artifacts:ro
+
